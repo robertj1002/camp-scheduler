@@ -132,20 +132,20 @@ if uploaded_file is not None:
 
 elif 'cabins' not in st.session_state:
     # --- FALLBACK DUMMY DATA ---
-    cabin_a = Cabin("Cabin A")
-    cabin_a.add_counselor(Counselor("Alice", is_lifeguard=True, days_off=["Tuesday"]))
+    cabin_a = Cabin("Half Moon")
+    cabin_a.add_counselor(Counselor("Johnson", is_lifeguard=True, days_off=["Tuesday"]))
     cabin_a.add_counselor(Counselor("Bob", is_lifeguard=False))
     cabin_a.add_counselor(Counselor("Charlie", is_lifeguard=True)) 
     
-    cabin_b = Cabin("Cabin B")
-    cabin_b.add_counselor(Counselor("David", is_lifeguard=True, days_off=["Monday", "Wednesday"]))
+    cabin_b = Cabin("West Girls")
+    cabin_b.add_counselor(Counselor("Michelle", is_lifeguard=True, days_off=["Monday", "Wednesday"]))
     cabin_b.add_counselor(Counselor("Eve", is_lifeguard=False))
-    cabin_b.add_counselor(Counselor("Frank", is_lifeguard=True)) 
+    cabin_b.add_counselor(Counselor("Hazel", is_lifeguard=True)) 
 
-    cabin_c = Cabin("Cabin C")
-    cabin_c.add_counselor(Counselor("Grace", is_lifeguard=True))
+    cabin_c = Cabin("West Boys")
+    cabin_c.add_counselor(Counselor("John", is_lifeguard=True))
     cabin_c.add_counselor(Counselor("Hank", is_lifeguard=False))
-    cabin_c.add_counselor(Counselor("Ivy", is_lifeguard=True))
+    cabin_c.add_counselor(Counselor("Elmer", is_lifeguard=True))
     
     st.session_state.cabins = [cabin_a, cabin_b, cabin_c]
 
